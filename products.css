@@ -1,0 +1,142 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faf8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.site-header {
+  background: #1c7c54;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.brand-mark {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.site-nav ul li a:hover,
+.site-nav ul li a.active {
+  color: #ffcc00;
+}
+
+/* Hero */
+.small-hero {
+  background: url('images/product.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.small-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.small-hero p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Categories Grid */
+.section {
+  padding: 2rem 0;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card-grid.four {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card.cat {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.2s;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card.cat:hover {
+  transform: translateY(-5px);
+}
+
+.card.cat img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.card.cat h3 {
+  font-size: 1.2rem;
+  color: #1c7c54;
+}
+
+/* Footer */
+.site-footer {
+  background: #1c7c54;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
