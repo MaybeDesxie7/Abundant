@@ -347,13 +347,3 @@ document.addEventListener('click', (e)=>{
   const name = card?.querySelector('h3, h2, .title')?.textContent?.trim() || 'Item'; 
   alert(name + ' added to cart (demo)'); 
 });
-
-document.querySelectorAll(".read-toggle").forEach(button => {
-  button.addEventListener("click", () => {
-    const textBlock = button.previousElementSibling;
-    const isOpen = textBlock.classList.toggle("open");
-
-    // Switch label
-    button.textContent = isOpen ? "Read less" : "Read more";
-  });
-});
