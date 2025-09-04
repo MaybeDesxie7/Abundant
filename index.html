@@ -53,7 +53,7 @@
           <li><a href="#values" data-i18n="nav.values">Values</a></li>
           <li><a href="#stats" data-i18n="nav.facts">Facts</a></li>
           <li><a href="#featured" data-i18n="nav.featured">Featured</a></li>
-          <li><a href="#categories" data-i18n="nav.products">Products</a></li>
+          <li><a href="products.html" data-i18n="nav.products">Products</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <a href="#contact" class="cta" data-i18n="nav.cta">Contact</a>
@@ -64,8 +64,8 @@
   <!-- HERO: multi media slider (images + video) -->
   <section id="hero" class="hero" role="region" aria-label="Hero">
     <div class="hero-slider">
-      <div class="hero-slide is-active" style="--bg:url('images/hero1.jpg');"></div>
-      <div class="hero-slide" style="--bg:url('images/hero2.jpg');"></div>
+      <div class="hero-slide is-active" style="--bg:url('images/hero4.jpg');"></div>
+      <div class="hero-slide" style="--bg:url('images/hero1.jpg');"></div>
       <div class="hero-slide" style="--bg:url('images/hero3.jpg');"></div>
       <div class="hero-overlay"></div>
 
@@ -73,7 +73,7 @@
         <h1 class="hero-title">Abundant Fruits Co. Ltd.</h1>
         <p class="hero-sub">From our fields to global markets — fresh, sustainable produce.</p>
         <div class="hero-ctas">
-          <a class="btn-primary" href="#featured" data-i18n="btn.explore">Discover our products</a><a class="btn-ghost" href="#about" data-i18n="btn.about">About us</a>
+          <a class="btn-primary" href="products.html" data-i18n="btn.explore">Discover our products</a><a class="btn-ghost" href="#about" data-i18n="btn.about">About us</a>
         </div>
       </div>
     </div></section>
@@ -86,30 +86,30 @@
     <div class="about-copy">
       <p class="welcome-kicker" data-i18n="about.kicker">ABOUT US</p>
       <h2 class="section-title">
-        <span style="font-size:1.5rem; font-weight:900; color:var(--agri-dark)">
+        <span class="about-title">
           ABUNDANT FRUITS Co. Ltd.
         </span>
       </h2>
 
-      <p style="margin-top:.75rem; color:#12321b;">
+      <p>
         ABUNDANT FRUITS is a fruit, nut, and spice distributor in Southern Africa. 
         We export high-quality agricultural products from Zimbabwe and some Southern 
         African countries to wholesalers around the world.
       </p>
-      <p style="color:#12321b;">
+      <p>
         Abundant Fruits was established to provide high-quality, nutritious, and delicious 
         tropical fruits, nuts, and spices from Zimbabwe and neighboring countries to global 
         markets at a reasonable price. At Abundant Fruits, we understand that 
         <em>“there is enough for everyone”</em>; thus, Abundant Fruits works on the benefits of 
         not only its shareholders but also customers, local farmers, and all other related parties.
       </p>
-      <p style="color:#12321b;">
+      <p>
         Currently, Abundant Fruits is expanding to reach more customers worldwide. By the end of 
         2022, Zimbabwean fruits and vegetables were reaching only about 10 markets globally, while 
         the potential is still much greater.
       </p>
 
-      <p data-i18n="about.p2" style="color:#12321b;">
+      <p data-i18n="about.p2">
         We combine modern post-harvest handling with ethical sourcing to protect both product 
         quality and local communities.
       </p>
@@ -133,13 +133,15 @@
 
     <!-- Media -->
     <div class="about-media blurred-bg">
-  <video autoplay muted loop playsinline>
-    <source src="videos/video1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+      <video autoplay muted loop playsinline>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
+  </div>
 </section>
+
 
 
   <!-- VALUES (BEST) -->
@@ -196,185 +198,269 @@
     </div>
   </section>
 
-  <!-- FEATURED PRODUCTS -->
-  <section id="featured" class="section featured">
-    <div class="container">
-      <h2 class="section-title center">Abundant Fruits — <span class="accent-olive">Featured Products</span></h2>
+ <!-- FEATURED PRODUCTS -->
+<section id="featured" class="section featured">
+  <div class="container">
+    <h2 class="section-title center">
+      Abundant Fruits — <span class="accent-olive" data-i18n="products.featured">Featured Products</span>
+    </h2>
 
-      <div class="card-grid five">
-        <article class="card product">
-          <img src="images/avocado.jpg" alt="Avocado" />
-          <h3 data-i18n="fruit.avocado">Avocado</h3>
-        </article>
-        <article class="card product">
-          <img src="images/grape.jpg" alt="Grapes" />
-          <h3 data-i18n="fruit.grapes">Grapes</h3>
-        </article>
-        <article class="card product">
-          <img src="images/banana.jpg" alt="Pineapple" />
-          <h3 data-i18n="fruit.banana">Banana</h3>
-        </article>
-        <article class="card product">
-          <img src="images/mango.jpg" alt="Mango" />
-          <h3 data-i18n="fruit.mango">Mango</h3>
-        </article>
-        <article class="card product">
-          <img src="images/orange.jpg" alt="Oranges" />
-          <h3 data-i18n="fruit.orange">Oranges</h3>
-        </article>
-      </div>
+    <div class="card-grid five">
+      <article class="card product">
+        <img src="images/avocado.jpg" alt="Avocado" />
+        <h3 data-i18n="fruit.avocado">Avocado</h3>
+      </article>
+      <article class="card product">
+        <img src="images/grape.jpg" alt="Grapes" />
+        <h3 data-i18n="fruit.grapes">Grapes</h3>
+      </article>
+      <article class="card product">
+        <img src="images/banana.jpg" alt="Banana" />
+        <h3 data-i18n="fruit.banana">Banana</h3>
+      </article>
+      <article class="card product">
+        <img src="images/mango.jpg" alt="Mango" />
+        <h3 data-i18n="fruit.mango">Mango</h3>
+      </article>
+      <article class="card product">
+        <img src="images/orange.jpg" alt="Oranges" />
+        <h3 data-i18n="fruit.orange">Oranges</h3>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- CATEGORIES -->
   <section id="categories" class="section categories">
-    <div class="container">
-      <h2 class="section-title center" data-i18n="products.title">Product Lines</h2>
+  <div class="container">
+    <h2 class="section-title center" data-i18n="products.title">Product Lines</h2>
 
-      <div class="card-grid four">
-        <article class="card cat">
-          <div class="cat-media blurred-bg small"><img src="images/fresh.jpg" alt="Fresh fruits"></div>
-          <h3 data-i18n="cat.fresh">Fresh Fruits</h3>
-          <p data-i18n="cat.fresh.text">Seasonal varieties sourced from partner farms, packed and shipped with strict QC.</p>
-          <a href="#contact" class="read-more" data-i18n="read.more">Read more</a>
-        </article>
-
-        <article class="card cat">
-          <div class="cat-media blurred-bg small"><img src="images/processed.jpg" alt="Processed products"></div>
-          <h3 data-i18n="cat.processed">Processed Fruits</h3>
-          <p data-i18n="cat.processed.text">Frozen, dried, and purees — consistent specs for retail and industrial buyers.</p>
-          <a href="#contact" class="read-more" data-i18n="read.more">Read more</a>
-        </article>
-
-        <article class="card cat">
-          <div class="cat-media blurred-bg small"><img src="images/nuts.jpg" alt="Nuts"></div>
-          <h3 data-i18n="cat.nuts">Nuts</h3>
-          <p data-i18n="cat.nuts.text">Cashews, peanuts, and specialty nuts graded for size, moisture, and flavor.</p>
-          <a href="#contact" class="read-more" data-i18n="read.more">Read more</a>
-        </article>
-
-        <article class="card cat">
-          <div class="cat-media blurred-bg small"><img src="images/spices2.jpg" alt="Spices"></div>
-          <h3 data-i18n="cat.spices">Spices &amp; Condiments</h3>
-          <p data-i18n="cat.spices.text">Ginger, turmeric, pepper, and curated spice mixes with verified origins.</p>
-          <a href="#contact" class="read-more" data-i18n="read.more">Read more</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWSLETTER -->
-  <section class="section newsletter">
-    <div class="container newsletter-inner reveal-on-scroll">
-      <div>
-        <h2 class="section-title" data-i18n="newsletter.title">Subscribe to our newsletter</h2>
-        <p data-i18n="newsletter.text">Fresh updates on harvests, pricing, and certifications.</p>
-      </div>
-      <form id="newsletterForm" class="newsletter-form" novalidate>
-        <input type="email" name="email" aria-label="Email address" placeholder="" data-i18n-placeholder="newsletter.placeholder" required />
-        <button type="submit" class="btn-primary" data-i18n="newsletter.subscribe">Subscribe</button>
-        <span class="note" id="newsletterNote" aria-live="polite"></span>
-      </form>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <div class="container contact-grid reveal-on-scroll">
-      <div class="contact-brand">
-        <img src="images/logo.png" alt="logo" onerror="this.src='images/logo.png'">
-        <h3><span class="accent">Abundant</span> Fruits Co. Ltd.</h3>
-        <ul class="plain contact-list">
-          <li><i class="fa fa-map-marker-alt"></i> 603 Zimdef House</li>
-          <li><i class="fa fa-envelope"></i> info@abundantfruits.com</li>
-          <li><i class="fa fa-phone"></i> +263 774 571 833</li>
-        </ul>
-      </div>
-
-      <form id="contactForm" class="contact-form" novalidate>
-        <h3 data-i18n="contact.title">Contact Us</h3>
-        <div class="grid-2">
-          <label><span data-i18n="contact.name">Name</span><input type="text" name="name" required /></label>
-          <label><span data-i18n="contact.email">Email</span><input type="email" name="email" required /></label>
+    <div class="card-grid four">
+      
+      <!-- Fresh Fruits -->
+      <article class="card cat">
+        <div class="cat-media blurred-bg small">
+          <img src="images/fresh.jpg" alt="Fresh fruits">
         </div>
-        <label><span data-i18n="contact.company">Company Name</span><input type="text" name="company" /></label>
-        <label><span data-i18n="contact.message">Message</span><textarea name="message" rows="5" required></textarea></label>
-        <button type="submit" class="btn-primary" data-i18n="contact.send">Send Message</button>
-        <p class="form-note" id="contactNote" aria-live="polite"></p>
-      </form>
+        <h3 data-i18n="cat.fresh">Fresh Fruits</h3>
+        
+        <!-- Summary always visible -->
+        <p class="summary">
+          A colorful range of seasonal fruits harvested at peak ripeness and delivered with care.
+        </p>
+
+        <!-- Extended details (hidden until Read More) -->
+        <div class="card-text">
+          <p>
+            Our fresh fruits include avocados, mangoes, bananas, citrus, and table grapes 
+            sourced from trusted farms across Zimbabwe and Southern Africa. 
+            Each fruit is hand-picked, sorted, and packed under strict quality standards 
+            to preserve natural flavor, nutrition, and freshness for export markets.
+          </p>
+        </div>
+
+        <button class="read-toggle" data-i18n="read.more">Read more</button>
+      </article>
+
+      <!-- Processed Fruits -->
+      <article class="card cat">
+        <div class="cat-media blurred-bg small">
+          <img src="images/processed.jpg" alt="Processed fruits">
+        </div>
+        <h3 data-i18n="cat.processed">Processed Fruits</h3>
+        
+        <p class="summary">
+          Convenient fruit options tailored for retail and industrial use.
+        </p>
+        
+        <div class="card-text">
+          <p>
+            We supply dried fruits, frozen fruits, purees, and concentrates 
+            made from farm-fresh produce. Processing is done under 
+            internationally certified facilities, ensuring long shelf-life 
+            while retaining natural taste, nutrients, and vibrant colors. 
+            Ideal for food manufacturers, retailers, and wholesalers.
+          </p>
+        </div>
+        
+        <button class="read-toggle" data-i18n="read.more">Read more</button>
+      </article>
+
+      <!-- Nuts -->
+      <article class="card cat">
+        <div class="cat-media blurred-bg small">
+          <img src="images/nuts.jpg" alt="Nuts">
+        </div>
+        <h3 data-i18n="cat.nuts">Nuts</h3>
+        
+        <p class="summary">
+          High-quality nuts carefully selected for taste, grade, and nutrition.
+        </p>
+        
+        <div class="card-text">
+          <p>
+            Our nut product line includes raw and roasted peanuts, cashews, 
+            macadamias, and other regional specialties. They are graded by 
+            size and quality, then processed with care to preserve 
+            flavor and health benefits. Perfect for snacks, cooking, 
+            and food production industries.
+          </p>
+        </div>
+        
+        <button class="read-toggle" data-i18n="read.more">Read more</button>
+      </article>
+
+      <!-- Spices -->
+      <article class="card cat">
+        <div class="cat-media blurred-bg small">
+          <img src="images/spices2.jpg" alt="Spices & condiments">
+        </div>
+        <h3 data-i18n="cat.spices">Spices &amp; Condiments</h3>
+        
+        <p class="summary">
+          Aromatic spices and condiments that bring authentic flavors to every dish.
+        </p>
+        
+        <div class="card-text">
+          <p>
+            We offer ginger, turmeric, chili, black pepper, and other natural 
+            spices sourced directly from growers. Carefully dried, ground, or 
+            blended to maintain purity, aroma, and potency. Our spices 
+            meet international safety standards and come in bulk or 
+            packaged formats for global distribution.
+          </p>
+        </div>
+        
+        <button class="read-toggle" data-i18n="read.more">Read more</button>
+      </article>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div>
-        <h4 data-i18n="footer.sitemap">Site Map</h4>
-        <ul class="plain">
-          <li><a href="#hero" data-i18n="nav.home">Home</a></li>
-          <li><a href="#about" data-i18n="nav.about">About</a></li>
-          <li><a href="#values" data-i18n="nav.values">Values</a></li>
-          <li><a href="#featured" data-i18n="nav.featured">Featured</a></li>
-        </ul>
-      </div>
 
-      <div>
-        <h4 data-i18n="footer.visit">Visit</h4>
-        <p>603 Zimdef House</p>
-        <p data-i18n="footer.hours">Mon–Fri: 8:30–17:00</p>
-      </div>
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="container contact-grid reveal-on-scroll">
+    <div class="contact-brand">
+      <img src="images/logo.png" alt="Abundant Fruits logo" class="contact-logo"
+        onerror="this.src='https://images.unsplash.com/photo-1524594154908-2d46b66a0a2a?q=80&w=120&auto=format&fit=crop'">
+      <h3><span class="accent">Abundant</span> Fruits Co. Ltd.</h3>
+      <ul class="plain contact-list">
+        <li><i class="fa fa-map-marker-alt"></i> 603 Zimdef House</li>
+        <li><i class="fa fa-envelope"></i> info@abundantfruits.com</li>
+        <li><i class="fa fa-phone"></i> +263 774 571 833</li>
+      </ul>
+    </div>
 
-      <form id="footerContact" class="footer-form" novalidate>
-        <h4 data-i18n="footer.quick">Quick Message</h4>
+    <form id="contactForm" class="contact-form" novalidate>
+      <h3 data-i18n="contact.title">Contact Us</h3>
+      <div class="grid-2">
+        <label><span data-i18n="contact.name">Name</span><input type="text" name="name" required /></label>
         <label><span data-i18n="contact.email">Email</span><input type="email" name="email" required /></label>
-        <label><span data-i18n="contact.message">Message</span><textarea name="message" rows="3" required></textarea></label>
-        <button type="submit" class="btn-primary" data-i18n="contact.send">Send</button>
-        <p class="form-note" id="footerNote" aria-live="polite"></p>
-      </form>
+      </div>
+      <label><span data-i18n="contact.company">Company Name</span><input type="text" name="company" /></label>
+      <label><span data-i18n="contact.message">Message</span><textarea name="message" rows="5" required></textarea></label>
+      <button type="submit" class="btn-primary" data-i18n="contact.send">Send Message</button>
+      <p class="form-note" id="contactNote" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div>
+      <h4 data-i18n="footer.sitemap">Site Map</h4>
+      <ul class="plain">
+        <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#values" data-i18n="nav.values">Values</a></li>
+        <li><a href="#featured" data-i18n="nav.featured">Featured</a></li>
+      </ul>
     </div>
 
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> Abundant Fruits Co. Ltd. All rights reserved.</p>
+    <div>
+      <h4 data-i18n="footer.visit">Visit</h4>
+      <p>603 Zimdef House</p>
+      <p data-i18n="footer.hours">Mon–Fri: 8:30–17:00</p>
+
+      <!-- Social links -->
+      <div class="social-links">
+        <a href="https://wa.me/263774571833" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://facebook.com/abundantfruits" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/abundantfruits" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/company/abundantfruits" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
-  </footer>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Abundant Fruits Co. Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
 
   <!-- Firebase + Firestore helper (replace placeholders with your config) -->
   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-app.js";
-    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-firestore.js";
+  // Firebase SDK imports
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-firestore.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-analytics.js";
 
-    const firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_PROJECT.firebaseapp.com",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_PROJECT.appspot.com",
-      messagingSenderId: "SENDER_ID",
-      appId: "APP_ID"
+  // Your Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyDu73pgLWiBVtZSKjtNi3r-hau7hxIDMaA",
+    authDomain: "abundant-fruits.firebaseapp.com",
+    projectId: "abundant-fruits",
+    storageBucket: "abundant-fruits.appspot.com",
+    messagingSenderId: "931903419011",
+    appId: "1:931903419011:web:f98d845582af125784a1b6",
+    measurementId: "G-DQTCE0MVFL"
+  };
+
+  // Init Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const analytics = getAnalytics(app);
+
+  // Save contact form
+  async function saveContact(data) {
+    try {
+      const docRef = await addDoc(collection(db, "contacts"), {
+        ...data,
+        createdAt: serverTimestamp()
+      });
+      return { ok: true, id: docRef.id };
+    } catch (err) {
+      console.error("Firestore error:", err);
+      return { ok: false, error: err.message };
+    }
+  }
+
+  // Attach to contact form
+  document.getElementById("contactForm")?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const note = document.getElementById("contactNote");
+
+    const data = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      company: form.company.value.trim(),
+      message: form.message.value.trim()
     };
 
-    try {
-      const app = initializeApp(firebaseConfig);
-      const db = getFirestore(app);
+    const result = await saveContact(data);
 
-      window.saveContact = async (data) => {
-        try {
-          const doc = await addDoc(collection(db, "contacts"), { ...data, createdAt: serverTimestamp() });
-          return { ok: true, id: doc.id };
-        } catch (err) { console.error(err); return { ok: false, error: err.message } }
-      };
-
-      window.saveNewsletter = async (email) => {
-        try {
-          const doc = await addDoc(collection(db, "newsletter"), { email, subscribedAt: serverTimestamp() });
-          return { ok: true, id: doc.id };
-        } catch (err) { console.error(err); return { ok: false, error: err.message } }
-      };
-    } catch (e) {
-      console.warn("Firebase init failed. Replace firebaseConfig with your project credentials.", e);
-      window.saveContact = async () => ({ ok: false, error: "firebase-not-configured" });
-      window.saveNewsletter = async () => ({ ok: false, error: "firebase-not-configured" });
+    if (result.ok) {
+      note.textContent = "✅ Thank you! Your message has been sent.";
+      form.reset();
+    } else {
+      note.textContent = "❌ Error: " + result.error;
     }
-  </script>
+  });
+</script>
 
   <script src="script.js"></script>
 
