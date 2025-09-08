@@ -508,6 +508,7 @@ button:hover, .btn:hover, input[type="submit"]:hover {
    Footer polishing
    ------------------------- */
 /* Footer Base */
+/* --- Footer Base Styles --- */
 .site-footer {
   background: linear-gradient(180deg, #08220c, #0b2e13) !important;
   color: #e9f5e9 !important;
@@ -557,30 +558,11 @@ footer .footer-title,
   margin-bottom: .5rem;
 }
 
-/* Specific styling for email + phone links */
-footer a[href^="mailto"],
-footer a[href^="tel"] {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 0.4rem 0.75rem;
-  border-radius: 6px;
-  font-weight: 600;
-  color: #bfecc4 !important;
-}
-
-footer a[href^="mailto"] i,
-footer a[href^="tel"] i {
-  color: #82e294;
-  font-size: 1.1rem;
-}
-
-footer a[href^="mailto"]:hover,
-footer a[href^="tel"]:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff !important;
-}
-/* Email + Phone Links in Footer */
+/* --- Email + Phone Buttons --- */
 .site-footer a[href^="mailto"],
-.site-footer a[href^="tel"] {
+.site-footer a[href^="tel"],
+.footer-email,
+.footer-phone {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -593,63 +575,79 @@ footer a[href^="tel"]:hover {
 }
 
 .site-footer a[href^="mailto"] i,
-.site-footer a[href^="tel"] i {
-  color: #82e294; /* green accent for icons */
+.footer-email i {
+  color: #82e294;
+  font-size: 1.1rem;
+}
+
+.site-footer a[href^="tel"] i,
+.footer-phone i {
+  color: #4ecb71;
   font-size: 1.1rem;
 }
 
 .site-footer a[href^="mailto"]:hover,
-.site-footer a[href^="tel"]:hover {
-  background: rgba(255, 255, 255, 0.18);
-  color: #ffffff !important;
-  text-decoration: none !important;
-  transform: translateX(4px);
-}
-/* Footer Email Link */
-.footer-email {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.08);
-  color: #bfecc4 !important;
-  transition: all 0.3s ease;
-}
-.footer-email i {
-  color: #82e294; /* soft green accent */
-  font-size: 1.1rem;
-}
-.footer-email:hover {
-  background: rgba(255, 255, 255, 0.18);
-  color: #ffffff !important;
-  transform: translateX(4px);
-  text-decoration: none !important;
-}
-
-/* Footer Phone Link */
-.footer-phone {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.08);
-  color: #bfecc4 !important;
-  transition: all 0.3s ease;
-}
-.footer-phone i {
-  color: #4ecb71; /* brighter green for phone */
-  font-size: 1.1rem;
-}
+.site-footer a[href^="tel"]:hover,
+.footer-email:hover,
 .footer-phone:hover {
   background: rgba(255, 255, 255, 0.18);
   color: #ffffff !important;
   transform: translateX(4px);
   text-decoration: none !important;
 }
+
+/* --- Responsive Footer Layout --- */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+  padding: 1rem 0;
+  color: #cbd7c4;
+  font-size: 0.9rem;
+}
+
+/* --- Mobile-Friendly Adjustments --- */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important; /* stack columns vertically */
+    text-align: center;
+  }
+
+  .footer-grid .footer-col {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-list {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-email,
+  .footer-phone,
+  .site-footer a[href^="mailto"],
+  .site-footer a[href^="tel"] {
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto 0.75rem auto;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+}
+
 
 
 /* -------------------------
@@ -974,3 +972,20 @@ figure img, picture img { object-fit: cover; width:100%; height:100%; display:bl
 
 
 /* End of enhanced CSS */
+/* Footer mobile responsiveness */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;  /* stack columns vertically */
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .footer-col ul,
+  .footer-col p {
+    justify-content: center;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+}
