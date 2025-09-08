@@ -507,22 +507,150 @@ button:hover, .btn:hover, input[type="submit"]:hover {
 /* -------------------------
    Footer polishing
    ------------------------- */
-footer, .site-footer {
+/* Footer Base */
+.site-footer {
   background: linear-gradient(180deg, #08220c, #0b2e13) !important;
   color: #e9f5e9 !important;
   padding: 2.25rem 1.5rem !important;
   border-top: 4px solid rgba(255,255,255,0.02) !important;
   font-size: .95rem !important;
 }
-footer a, .site-footer a { color: #bfecc4 !important; text-decoration: none !important; }
-footer a:hover, .site-footer a:hover { text-decoration: underline !important; color: #ffffff !important; }
-footer ul, .footer-list { list-style: none !important; padding: 0 !important; margin: 0 !important; display: grid; gap: .45rem; }
-footer li, .site-footer li { display:flex; align-items:center; gap:.5rem; opacity: 0.95; }
-footer .footer-title, .site-footer .footer-title { font-weight: 900; color: #d7f1db; margin-bottom: .5rem; }
 
-/* subtle separators and small print */
-footer .muted, .site-footer .muted { color: rgba(230, 245, 230, 0.8); font-size: .85rem; }
-footer .legal { margin-top: 1rem; opacity: .9; border-top: 1px dashed rgba(255,255,255,0.03); padding-top: .75rem; }
+footer a,
+.site-footer a {
+  color: #bfecc4 !important;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer a:hover,
+.site-footer a:hover {
+  text-decoration: underline !important;
+  color: #ffffff !important;
+  transform: translateX(4px);
+}
+
+footer ul,
+.footer-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: grid;
+  gap: .45rem;
+}
+
+footer li,
+.site-footer li {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  opacity: 0.95;
+}
+
+footer .footer-title,
+.site-footer .footer-title {
+  font-weight: 900;
+  color: #d7f1db;
+  margin-bottom: .5rem;
+}
+
+/* Specific styling for email + phone links */
+footer a[href^="mailto"],
+footer a[href^="tel"] {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #bfecc4 !important;
+}
+
+footer a[href^="mailto"] i,
+footer a[href^="tel"] i {
+  color: #82e294;
+  font-size: 1.1rem;
+}
+
+footer a[href^="mailto"]:hover,
+footer a[href^="tel"]:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff !important;
+}
+/* Email + Phone Links in Footer */
+.site-footer a[href^="mailto"],
+.site-footer a[href^="tel"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  color: #bfecc4 !important;
+  transition: all 0.3s ease;
+}
+
+.site-footer a[href^="mailto"] i,
+.site-footer a[href^="tel"] i {
+  color: #82e294; /* green accent for icons */
+  font-size: 1.1rem;
+}
+
+.site-footer a[href^="mailto"]:hover,
+.site-footer a[href^="tel"]:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transform: translateX(4px);
+}
+/* Footer Email Link */
+.footer-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  color: #bfecc4 !important;
+  transition: all 0.3s ease;
+}
+.footer-email i {
+  color: #82e294; /* soft green accent */
+  font-size: 1.1rem;
+}
+.footer-email:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+  transform: translateX(4px);
+  text-decoration: none !important;
+}
+
+/* Footer Phone Link */
+.footer-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  color: #bfecc4 !important;
+  transition: all 0.3s ease;
+}
+.footer-phone i {
+  color: #4ecb71; /* brighter green for phone */
+  font-size: 1.1rem;
+}
+.footer-phone:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff !important;
+  transform: translateX(4px);
+  text-decoration: none !important;
+}
+
 
 /* -------------------------
    Nav contact color fix (clear and accessible)
