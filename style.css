@@ -837,4 +837,12 @@ figure img, picture img { object-fit: cover; width:100%; height:100%; display:bl
 /* Read more as ghost for non-image cards */
 .card .read-more { margin-top: .5rem; display:inline-block; }
 
+.fab-menu { position: fixed; bottom: 20px; right: 20px; }
+.fab-menu button { background: #2e7d32; color:#fff; border-radius:50%; padding:15px; border:none; cursor:pointer; }
+.fab-menu .fab-links { display:none; flex-direction:column; gap:10px; margin-bottom:10px; }
+.fab-menu.fab-open .fab-links { display:flex; }
+.social-icons { display:flex; gap:10px; }
+.social-icons a { font-size:1.3rem; color:#2e7d32; }
+
+
 /* End of enhanced CSS */
